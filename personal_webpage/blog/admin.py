@@ -22,7 +22,7 @@ class BlogPostAdmin(admin.ModelAdmin):
     )
     list_filter = (
         'target_age',
-        'creator'
+        'creator',
     )
 
 admin.site.register(BlogPost,BlogPostAdmin)
