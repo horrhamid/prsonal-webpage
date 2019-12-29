@@ -12,6 +12,6 @@ class BlogPost(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_active = models.BooleanField(default=False)
-    creator = models.OneToOneField(User, on_delete=models.CASCADE)
+    creator = models.ForeignKey(User, on_delete=models.CASCADE)
     CHOICES = [('K', 'Kids'), ('M', 'Mature'), ('E', 'Everyone')]
     target_age = models.CharField(max_length=1, choices=CHOICES)
