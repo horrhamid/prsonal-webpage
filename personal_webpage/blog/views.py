@@ -7,4 +7,4 @@ from .models import BlogPost
 def blog_view(request):
     queryset = BlogPost.objects.all()
 
-    return render(request, 'temp.html', context={'posts': queryset[0]})
+    return render(request, 'temp.html', {'posts': queryset})
