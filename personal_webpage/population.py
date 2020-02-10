@@ -26,8 +26,6 @@ def populate(n=5):
     '''
     for entry in range(n):
         fake_text = fake.texts(nb_texts=6, max_nb_chars=1000, ext_word_list=None)
-        #fake_creator = random.choice(User)
-        #print(fake_creator)
         fake_t_a = random.choice(topics)
         fake_title = fake.texts(nb_texts=1, max_nb_chars=19, ext_word_list=None)
         fake_overview = fake.texts(nb_texts=3, max_nb_chars=50, ext_word_list=None)
